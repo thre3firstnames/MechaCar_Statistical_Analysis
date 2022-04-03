@@ -1,0 +1,22 @@
+library(dplyr)
+library(tidyverse)
+#Deliv 1
+#Import MechaCar Dataset
+mecha_mpg <- read.csv('MechaCar_mpg.csv',check.names = F,stringsAsFactors = F)
+
+#Perform linear regression
+mecha_lm <- lm(mpg ~ vehicle_length + vehicle_weight + spoiler_angle + ground_clearance+AWD, data=mecha_mpg)
+
+#determine p-value and r-squared for summary
+summary(mecha_lm)
+
+
+#Deliv 2
+#Import Suspension Coil Dataset
+suspension_coil <- read.csv('Suspension_Coil.csv',check.names = F,stringsAsFactors = F)
+
+#create total_summary frame
+total_summary <- suspension_coil %>% summarize(Mean=mean(PSI), Median=median(PSI), Variance=var(PSI), SD=sd(PSI))
+
+# create lot_summary frame 
+lot_summary <- 
