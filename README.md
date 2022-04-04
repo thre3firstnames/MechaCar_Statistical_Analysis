@@ -18,15 +18,19 @@ Lots 1 & 2 are within the acceptable range for variance. However, the variance f
 
 ## T-Tests on Suspension Coils
 ![pop_mean.png](Analysis/pop_mean.png)
+
 For the complete population test results, the p-value is above the assumed significance level of 0.05%. Thus the two means are statistically similar. 
 
 ![Lot1.png](Analysis/Lot1.png)
+
 The test on Lot 1 proved that the means are statistically identical with a p-value of 1. 
 
 ![Lot2.png](Analysis/Lot2.png)
+
 The test on Lot 2 proved statistically similar to the tests on the entire population with a p-value of 0.60, and the two means are statistically similar.
 
 ![Lot3.png](Analysis/Lot3.png)
+
 The test on Lot 3 proved statistically dissimilar from the population tests and the tests on the other lots. Its p-value of 0.04 comes in below the assumed significance level. 
 
 ## Study Design: MechaCar vs. Competition
